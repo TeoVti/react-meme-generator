@@ -1,9 +1,16 @@
 img {
-  width: 30%;
-  height: 30%;
   margin-top: 30px;
+  max-height: 450px;
 }
 .content {
-  text-align: center;
-  margin-top: 100px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
 }
