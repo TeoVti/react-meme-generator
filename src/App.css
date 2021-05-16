@@ -1,5 +1,5 @@
 img {
-  margin-top: 30px;
+  margin-top: 15vh;
   max-height: 450px;
 }
 .content {
@@ -13,4 +13,32 @@ img {
   flex-direction: column;
   flex-basis: 100%;
   flex: 1;
+}
+.form {
+  margin-top: 5vh;
+  text-align: center;
+  display: grid;
+}
+input {
+  padding: 5px;
+  font-size: 20px;
+  margin: 0px 100px 15px 100px;
+  text-align: center;
+}
+button {
+  margin: 1vh 20vh;
+  font-size: 25px;
+}
+.card {
+  margin: 180px 250px 200px 60px;
+  padding-bottom: 30px;
+  background-color: rgba(3, 30, 56, 0.95);
+  border-radius: 20px;
+}
+select {
+  font-size: 25px;
+  margin: 2vh;
+}
+.img {
+  text-align: center;
 }

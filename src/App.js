@@ -3,9 +3,9 @@ import { useState } from 'react';
 import ImageComponent from './imageComponent';
 
 function App() {
-  const [topText, setTopText] = useState('memes');
-  const [bottomText, setBottomText] = useState('memes everywhere');
-  const [img, setImg] = useState('buzz');
+  const [topText, setTopText] = useState('');
+  const [bottomText, setBottomText] = useState('');
+  const [img, setImg] = useState('afraid');
   const imgUrl = `https://api.memegen.link/images/${img}/${topText}/${bottomText}.png`;
   const options = {};
   const [realUrl, SetRealUrl] = useState();
@@ -65,27 +65,34 @@ function App() {
         <ImageComponent realUrl={realUrl} />
       </div>
       <div className="column">
-        <div className="form">
-          <input
-            value={topText}
-            type="text"
-            onChange={handleOnChangeTop}
-          ></input>
-          <input
-            value={bottomText}
-            type="text"
-            onChange={handleOnChangeBottom}
-          ></input>
-          <form>
-            <select onChange={handleOnChangeImg}>
-              <option value="afraid">Afraid</option>
-              <option value="ackbar">Ackbar</option>
-              <option value="aag">Aag</option>
-              <option value="buzz">Buzz</option>
-            </select>
-          </form>
-          <button onClick={displayData}>Click</button>
-          <button onClick={dwnl}>Download</button>
+        <div className="card">
+          <div className="form">
+            <input
+              placeholder="Type top text"
+              value={topText}
+              type="text"
+              onChange={handleOnChangeTop}
+            ></input>
+            <input
+              placeholder="Type bottom text"
+              value={bottomText}
+              type="text"
+              onChange={handleOnChangeBottom}
+            ></input>
+            <form>
+              <select onChange={handleOnChangeImg}>
+                <option selected="true" value="Background image" disabled>
+                  Select image
+                </option>
+                <option value="afraid">Afraid</option>
+                <option value="ackbar">Ackbar</option>
+                <option value="aag">Aag</option>
+                <option value="buzz">Buzz</option>
+              </select>
+            </form>
+            <button onClick={displayData}>Generate</button>
+            <button onClick={dwnl}>Download</button>
+          </div>
         </div>
       </div>
     </div>
