@@ -1,7 +1,7 @@
 function ImageComponent(props) {
   return (
     <div class="img">
-      <img src={props.realUrl} />
+      <img src={props.realUrl} alt="" />
     </div>
   );
 }
