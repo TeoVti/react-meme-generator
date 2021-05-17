@@ -86,8 +86,14 @@ function App() {
                 </option>
                 <option value="afraid">Afraid</option>
                 <option value="ackbar">Ackbar</option>
-                <option value="aag">Aag</option>
+                <option value="agnes">Agnes</option>
+                <option value="ants">Ants</option>
+                <option value="awesome">Awesome</option>
+                <option value="awkward">Awkward</option>
                 <option value="buzz">Buzz</option>
+                <option value="captain">Captain</option>
+                <option value="disastergirl">Disaster girl</option>
+                <option value="facepalm">Face palm</option>
               </select>
             </form>
             <button onClick={displayData}>Generate</button>
