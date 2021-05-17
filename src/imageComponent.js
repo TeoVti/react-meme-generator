@@ -1,6 +1,6 @@
 function ImageComponent(props) {
   return (
-    <div class="img">
+    <div className="img">
       <img src={props.realUrl} alt="" />
     </div>
   );

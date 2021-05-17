@@ -80,7 +80,7 @@ function App() {
             />
             <form>
               <select onChange={handleOnChangeImg}>
-                <option selected="true" value="Background image" disabled>
+                <option selected={true} value="Background image" disabled>
                   Select image
                 </option>
                 <option value="afraid">Afraid</option>
